@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYE GAZE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <!-- <button class="menu-btn" onclick="toggleEyes()">👀</button>
+        <button class="menu-btn" onclick="toggleFace()">😊</button> -->
+        <!-- <button id="eyeBtn" class="toggle-btn" onclick="toggleButton('eyeBtn')">Eye</button>
+        <button id="faceBtn" class="toggle-btn" onclick="toggleButton('faceBtn')">Face</button> -->
+        <div id="main">
+           <div class="container">
+            <h1>Eye</h1>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+           </div>
+
+            <div class="container" >
+                <h1>FACE</h1>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                
+                </label>
+            </div>
+        </div>
+        <button class="dropdown-btn" onclick="toggleDropdown('guidelineDropdown')">Guidelines</button>
+        <div id="guidelineDropdown" class="dropdown-content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ratione minima obcaecati tenetur
+                exercitationem debitis in, repudiandae earum inventore mollitia reiciendis distinctio natus!</p>
+        </div>
+        <button class="dropdown-btn" onclick="toggleDropdown('contactDropdown')">Contact Us</button>
+        <div id="contactDropdown" class="dropdown-content">
+            <form id="contactForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input class="submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div id="main">
+        <button class="menu-btn1" onclick="openNav()">☰</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
